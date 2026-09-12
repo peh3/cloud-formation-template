@@ -46,7 +46,7 @@ jobs:
       - name: Deploy CloudFormation Stack
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
-          name: demo-s3-stack
+          name: tk-cloud-formation-s3-stack
           template: templates/s3-bucket.yaml
           no-fail-on-empty-changeset: "1"
           parameter-overrides: "EnvironmentName=dev"
